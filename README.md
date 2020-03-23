@@ -1,4 +1,4 @@
-## Move to directory "manish_kumar"
+## Move to directory "Klub-Test"
 
 ## Run command "npm install"
 
