@@ -1,0 +1,60 @@
+{
+  "name": "genomet-virtual-board",
+  "version": "1.0.0",
+  "description": "```  git clone https://manishcronj@bitbucket.org/cronj-dev/genomet-virtual-board.git ```",
+  "main": "index.js",
+  "scripts": {
+    "test": "babel-watch spec/run.js --presets es2015,stage-2",
+    "test-init": "./node_modules/jasmine/bin/jasmine.js init",
+    "start": "babel-watch ./server/server.js --presets es2015,stage-2",
+    "inspect": "babel-watch --inspect ./server/server.js --presets es2015,stage-2",
+    "test-cover": "nyc npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://manishcronj@bitbucket.org/cronj-dev/genomet-virtual-board.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/cronj-dev/genomet-virtual-board#readme",
+  "devDependencies": {
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "babel-watch": "^2.0.7",
+    "faker": "^4.1.0",
+    "jasmine": "^3.4.0",
+    "nyc": "^14.1.1",
+    "request": "^2.88.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "bunyan": "^1.8.12",
+    "composable-middleware": "^0.3.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "debug": "^4.1.1",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.5.0",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "pg": "^7.8.1",
+    "sequelize": "^4.44.3"
+  },
+  "nyc": {
+    "all": true,
+    "reporter": "html",
+    "include": [
+      "**/*.js"
+    ],
+    "exclude": [
+      "**/spec/**",
+      "**/coverage/**",
+      "**/node_modules/**",
+      "**/models/**",
+      "**/seed/**"
+    ]
+  }
+}
