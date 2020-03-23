@@ -1,4 +1,4 @@
-## Clone and Move to directory "Klub-Test"
+## Run "git clone https://github.com/ManiBhai91637/Klub-Test.git" and Move to directory "Klub-Test"
 
 ## Run command "npm install"
 
