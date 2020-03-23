@@ -1,4 +1,4 @@
-## Move to directory "Klub-Test"
+## Clone and Move to directory "Klub-Test"
 
 ## Run command "npm install"
 
